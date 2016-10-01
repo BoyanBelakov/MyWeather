@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/city"
+        android:key="@string/pref_key_city_name"
+        android:defaultValue="@string/def_city_name">
+        <intent
+            android:targetPackage="com.boyanbelakov.myweather"
+            android:targetClass="com.boyanbelakov.myweather.SearchCityActivity" />
+    </Preference>
+
+    <ListPreference
+        android:defaultValue="@string/def_update_interval"
+        android:dialogTitle="@string/select_update_interval"
+        android:entries="@array/update_intervals_ui"
+        android:entryValues="@array/update_intervals_values"
+        android:key="@string/pref_key_update_interval"
+        android:title="@string/update_interval" />
+
+    <!--suppress AndroidElementNotAllowed -->
+    <SwitchPreferenceCompat
+        android:title="@string/temperature"
+        android:key="@string/pref_key_temperature_unit_c"
+        android:defaultValue="@bool/def_temperature_unit_c"
+        android:switchTextOn="C"
+        android:switchTextOff="F"
+        android:summaryOn="°C"
+        android:summaryOff="°F"/>
+</PreferenceScreen>

@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">My Weather</string>
+
+    <string name="error">Error</string>
+    <string name="show_technical_information">Show technical information</string>
+    <string name="err_user_text">Sorry but there is a problem.</string>
+    <string name="empty_view_text">No data to display</string>
+    <string name="visibility">Visibility</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="temperature">Temperature</string>
+    <string name="city">City</string>
+    <string name="search_city">Search City</string>
+    <string name="hint_city_name">City name</string>
+    <string name="cities_not_found">Cities not found.</string>
+    <string name="validator_err_val_empty">This field is required.</string>
+    <string name="select_update_interval">Select Update Interval</string>
+    <string name="update_interval">Update interval</string>
+    <string name="about_app">My Weather %s\n\u00a9 Boyan Belakov, 2016\ne-mail: belako.pl@gmail.com\nweather source Yahoo</string>
+
+    <string name="format_temperature_c">%d °C</string>
+    <string name="format_temperature_f">%d °F</string>
+
+    <string name="format_wind_kph">%1$.1f km/h %2$s</string> <!--{wind speed} km/h {wind direction}-->
+    <string name="format_wind_mph">%1$.1f mi/h %2$s</string>
+
+    <string name="format_pressure_mb">%.1f mb</string>
+    <string name="format_pressure_in">%.1f in</string>
+
+    <string name="format_distance_km">%.1f km</string>
+    <string name="format_distance_mi">%.1f mi</string>
+
+    <string name="format_humidity">%d %%</string>
+
+    <string name="direction_N">N</string>
+    <string name="direction_NE">NE</string>
+    <string name="direction_E">E</string>
+    <string name="direction_SE">SE</string>
+    <string name="direction_S">S</string>
+    <string name="direction_SW">SW</string>
+    <string name="direction_W">W</string>
+    <string name="direction_NW">NW</string>
+
+    <string-array name="weather_condition_texts">
+        <item code="0">Tornado</item>
+        <item code="1">Tropical storm</item>
+        <item code="2">Hurricane</item>
+        <item code="3">Severe thunderstorms</item>
+        <item code="4">Thunderstorms</item>
+        <item code="5">Mixed rain and snow</item>
+        <item code="6">Mixed rain and sleet</item>
+        <item code="7">Mixed snow and sleet</item>
+        <item code="8">Freezing drizzle</item>
+        <item code="9">Drizzle</item>
+        <item code="10">Freezing rain</item>
+        <item code="11">Showers</item>
+        <item code="12">Showers</item>
+        <item code="13">Snow flurries</item>
+        <item code="14">Light snow showers</item>
+        <item code="15">Blowing snow</item>
+        <item code="16">Snow</item>
+        <item code="17">Hail</item>
+        <item code="18">Sleet</item>
+        <item code="19">Dust</item>
+        <item code="20">Foggy</item>
+        <item code="21">Haze</item>
+        <item code="22">Smoky</item>
+        <item code="23">Blustery</item>
+        <item code="24">Windy</item>
+        <item code="25">Cold</item>
+        <item code="26">Cloudy</item>
+        <item code="27">Mostly cloudy (night)</item>
+        <item code="28">Mostly cloudy (day)</item>
+        <item code="29">Partly cloudy (night)</item>
+        <item code="3">Partly cloudy (day)</item>
+        <item code="31">Clear (night)</item>
+        <item code="32">Sunny</item>
+        <item code="33">Fair (night)</item>
+        <item code="34">Fair (day)</item>
+        <item code="35">Mixed rain and hail</item>
+        <item code="36">Hot</item>
+        <item code="37">Isolated thunderstorms</item>
+        <item code="38">Scattered thunderstorms</item>
+        <item code="39">Scattered thunderstorms</item>
+        <item code="40">Scattered showers</item>
+        <item code="41">Heavy snow</item>
+        <item code="42">Scattered snow showers</item>
+        <item code="43">Heavy snow</item>
+        <item code="44">Partly cloudy</item>
+        <item code="45">Thundershowers</item>
+        <item code="46">Snow showers</item>
+        <item code="47">Isolated thundershowers</item>
+        <item code="3200">Not available</item>
+    </string-array>
+
+    <string-array name="update_intervals_ui">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+    </string-array>
+
+    <string-array name="update_intervals_values">
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>10800000</item>
+        <item>14400000</item>
+    </string-array>
+
+    <string name="pref_key_city_name">city_name</string>
+    <string name="pref_key_city_id">city_id</string>
+    <string name="pref_key_temperature_unit_c">temperature_unit_c</string>
+    <string name="pref_key_update_interval">update_interval</string>
+
+    <string name="def_city_name">Plovdiv, BG</string>
+    <integer name="def_city_id">838804</integer>
+    <string name="def_update_interval">3600000</string>
+    <bool name="def_temperature_unit_c">true</bool>
+</resources>

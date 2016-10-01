@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">My Weather</string>
+
+    <string name="error">Грешка</string>
+    <string name="show_technical_information">Покажи техническа информация.</string>
+    <string name="err_user_text">Съжалявам но има проблем.</string>
+    <string name="empty_view_text">Няма данни за показване.</string>
+    <string name="visibility">Видимост</string>
+    <string name="wind">Вятър</string>
+    <string name="pressure">Налягане</string>
+    <string name="humidity">Влажност</string>
+    <string name="sunrise">Изгрев</string>
+    <string name="sunset">Залез</string>
+    <string name="refresh">Опреснявам</string>
+    <string name="settings">Настройки</string>
+    <string name="about">Относно</string>
+    <string name="temperature">Температура</string>
+    <string name="city">Град</string>
+    <string name="search_city">Търси град</string>
+    <string name="hint_city_name">град</string>
+    <string name="cities_not_found">Градове не са открити.</string>
+    <string name="validator_err_val_empty">Това поле се изисква.</string>
+    <string name="select_update_interval">Избери интервал на актуализация</string>
+    <string name="update_interval">Интервал на актуализация</string>
+    <string name="about_app">My Weather %s\n\u00a9 Боян Белаков, 2016\nе-поща: belako.pl@gmail.com\nизточник на времето Yahoo</string>
+
+    <string name="format_temperature_c">%d °C</string>
+    <string name="format_temperature_f">%d °F</string>
+
+    <string name="format_wind_kph">%1$.1f км/ч %2$s</string> <!--{wind speed} km/h {wind direction}-->
+    <string name="format_wind_mph">%1$.1f ми/ч %2$s</string>
+
+    <string name="format_pressure_mb">%.1f mb</string>
+    <string name="format_pressure_in">%.1f in</string>
+
+    <string name="format_distance_km">%.1f км</string>
+    <string name="format_distance_mi">%.1f ми</string>
+
+    <string name="format_humidity">%d %%</string>
+
+    <string name="direction_N">С</string>
+    <string name="direction_NE">СИ</string>
+    <string name="direction_E">И</string>
+    <string name="direction_SE">ЮИ</string>
+    <string name="direction_S">Ю</string>
+    <string name="direction_SW">ЮЗ</string>
+    <string name="direction_W">З</string>
+    <string name="direction_NW">СЗ</string>
+
+    <string-array name="weather_condition_texts">
+        <item code="0">Торнадо</item>
+        <item code="1">Тропическа буря</item>
+        <item code="2">Ураган</item>
+        <item code="3">Тежки гръмотевични бури</item>
+        <item code="4">Гръмотевични бури</item>
+        <item code="5">Дъжд и сняг</item>
+        <item code="6">Дъжд и суграшица</item>
+        <item code="7">Сняг и суграшица</item>
+        <item code="8">Ледена роса</item>
+        <item code="9">Ситен дъжд</item>
+        <item code="10">Леден дъжд</item>
+        <item code="11">Превалявания</item>
+        <item code="12">Превалявания</item>
+        <item code="13">Превалявания от сняг</item>
+        <item code="14">Превалявания от сняг</item>
+        <item code="15">Вятър и сняг</item>
+        <item code="16">Сняг</item>
+        <item code="17">Градушка</item>
+        <item code="18">Суграшица</item>
+        <item code="19">Прах</item>
+        <item code="20">Мъгливо</item>
+        <item code="21">Лека мъгла</item>
+        <item code="22">Задимено</item>
+        <item code="23">Силен вятър</item>
+        <item code="24">Ветровито</item>
+        <item code="25">Студ</item>
+        <item code="26">Облачно</item>
+        <item code="27">Главно облачно</item>
+        <item code="28">Главно облачно</item>
+        <item code="29">Частична облачност</item>
+        <item code="30">Частична облачност</item>
+        <item code="31">Ясна нощ</item>
+        <item code="32">Слънчево</item>
+        <item code="33">Ясна нощ</item>
+        <item code="34">Слънчево</item>
+        <item code="35">Дъжд и градушка</item>
+        <item code="36">Горещо</item>
+        <item code="37">Гръмотевични бури</item>
+        <item code="38">Гръмотевични бури</item>
+        <item code="39">Гръмотевични бури</item>
+        <item code="40">Превалявания</item>
+        <item code="41">Силен сняг</item>
+        <item code="42">Превалявания от сняг</item>
+        <item code="43">Силен сняг</item>
+        <item code="44">Oблачно</item>
+        <item code="45">Гръмотевични бури</item>
+        <item code="46">Превалявания от сняг</item>
+        <item code="47">Гръмотевични бури</item>
+        <item code="3200">Нима данни за времето</item>
+    </string-array>
+
+    <string-array name="update_intervals_ui">
+        <item>1 час</item>
+        <item>2 часа</item>
+        <item>3 часа</item>
+        <item>4 часа</item>
+    </string-array>
+
+    <string-array name="update_intervals_values">
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>10800000</item>
+        <item>14400000</item>
+    </string-array>
+
+    <string name="pref_key_city_name">city_name</string>
+    <string name="pref_key_city_id">city_id</string>
+    <string name="pref_key_temperature_unit_c">temperature_unit_c</string>
+    <string name="pref_key_update_interval">update_interval</string>
+
+    <string name="def_city_name">Plovdiv, BG</string>
+    <integer name="def_city_id">838804</integer>
+    <string name="def_update_interval">3600000</string>
+    <bool name="def_temperature_unit_c">true</bool>
+</resources>

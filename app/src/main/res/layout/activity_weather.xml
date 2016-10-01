@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingTop="@dimen/activity_vertical_margin"
+             android:paddingBottom="@dimen/small_gap"
+             android:paddingLeft="@dimen/activity_horizontal_margin"
+             android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:id="@+id/weather_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <TextView
+                android:id="@+id/weather_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="0"
+                android:layout_rowSpan="3"
+                tools:text=""
+                android:textSize="@dimen/weather_icon_size"
+                tools:ignore="InconsistentLayout"/>
+
+            <TextView
+                android:id="@+id/weather_cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/large_gap"
+                android:layout_row="0"
+                tools:text="Plovdiv"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                tools:ignore="InconsistentLayout"/>
+
+            <TextView
+                android:id="@+id/weather_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/large_gap"
+                android:layout_row="1"
+                tools:text="Sunny"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                tools:ignore="InconsistentLayout"/>
+
+            <TextView
+                android:id="@+id/weather_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/large_gap"
+                android:layout_row="2"
+                tools:text="28 C"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:text="@string/wind"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:text="@string/humidity"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:text="@string/pressure"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:text="@string/visibility"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="7"
+                android:text="@string/sunrise"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="8"
+                android:text="@string/sunset"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/weather_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:layout_marginStart="@dimen/large_gap"
+                android:layout_column="1"
+                android:layout_row="3"
+                tools:text="0.5 km/h S"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/weather_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:layout_marginStart="@dimen/large_gap"
+                tools:text="10 %"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/weather_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="5"
+                tools:text="33389.81 mb"
+                android:layout_marginStart="@dimen/large_gap"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/weather_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="6"
+                tools:text="20.5 km"
+                android:layout_marginStart="@dimen/large_gap"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <TextView
+                android:id="@+id/weather_sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="7"
+                android:layout_marginStart="@dimen/large_gap"
+                tools:text="7:05"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/weather_sunset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="8"
+                android:layout_marginStart="@dimen/large_gap"
+                tools:text="19:25"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </GridLayout>
+
+        <com.boyanbelakov.myweather.customview.ForecastChart
+            android:id="@+id/weather_forecastChart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/medium_gap"/>
+
+        <TextView
+            android:id="@+id/weather_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:maxLines="1"
+            tools:text="Sat, 17 Sep 2016"
+            android:drawableEnd="@drawable/yahoo_logo"
+            android:drawablePadding="@dimen/small_gap"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weather_emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/empty_view_text"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/weather_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</FrameLayout>
